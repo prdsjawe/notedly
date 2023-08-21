@@ -1,5 +1,5 @@
 import { ERoutes } from "@constants/routes";
-import { Dashboard, Landing } from "@pages";
+import { Dashboard, Landing, Login } from "@pages";
 import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
@@ -12,6 +12,10 @@ const router = createRouter({
     {
       path: ERoutes.DASHBOARD,
       component: Dashboard,
+    },
+    {
+      path: ERoutes.LOGIN,
+      component: Login,
     },
   ],
 });

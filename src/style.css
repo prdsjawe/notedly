@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-gray-50;
+    @apply bg-stone-50 font-sans;
   }
 }
 
@@ -13,11 +13,36 @@
     @apply rounded-lg border border-gray-300 bg-gray-50 px-6 py-5 w-[500px] flex flex-col items-center;
   }
 
+  .input-group {
+    @apply flex flex-col gap-1 w-full;
+  }
+
   .input-group span {
     @apply text-xs text-gray-400;
   }
 
   .input-group input {
-    @apply px-6 py-3 rounded-md border border-gray-100;
+    @apply px-3.5 py-1.5 rounded-md border border-gray-300 w-full;
+  }
+
+  .btn {
+    @apply py-1.5 px-3 rounded-md cursor-pointer transition-all;
+  }
+
+  .navbar {
+    @apply hover:bg-gray-200 !text-sm;
+  }
+
+  .navbar-active {
+    @apply !text-sm;
+  }
+
+  .navbar-active,
+  .primary {
+    @apply bg-stone-800 hover:bg-stone-900 text-white;
+  }
+
+  .accent-link {
+    @apply p-0 rounded-none hover:bg-transparent text-gray-400 hover:underline text-center;
   }
 }
